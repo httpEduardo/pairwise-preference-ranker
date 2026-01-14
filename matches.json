@@ -1,0 +1,17 @@
+{
+  "items": [
+    "Plan A",
+    "Plan B",
+    "Plan C",
+    "Plan D"
+  ],
+  "preferences": [
+    {"winner": "Plan A", "loser": "Plan B", "context": "lower cost"},
+    {"winner": "Plan C", "loser": "Plan B", "context": "higher accuracy"},
+    {"winner": "Plan A", "loser": "Plan D", "context": "simpler"},
+    {"winner": "Plan C", "loser": "Plan A", "context": "better coverage"},
+    {"winner": "Plan D", "loser": "Plan B", "context": "faster"},
+    {"winner": "Plan C", "loser": "Plan D", "context": "fewer failures"},
+    {"winner": "Plan A", "loser": "Plan B", "context": "stability"}
+  ]
+}
