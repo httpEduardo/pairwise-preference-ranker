@@ -39,6 +39,10 @@ fn main() {
 
     let raw = fs::read_to_string(&input).expect("Failed to read input");
     let dataset: Dataset = serde_json::from_str(&raw).expect("Invalid JSON");
+    if dataset.items.is_empty() || dataset.preferences.is_empty() {
+        eprintln!("Input must include at least one item and one preference.");
+        std::process::exit(2);
+    }
 
     let mut index = HashMap::new();
     for (i, item) in dataset.items.iter().enumerate() {
